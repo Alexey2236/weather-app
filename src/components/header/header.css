@@ -1,0 +1,49 @@
+.header {
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4f4f4f;
+  border-radius: 20px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo-header{
+  width: 95%;
+  height: 95%;
+}
+.heaser-title {
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4793ff;
+}
+
+.city {
+  margin-left: 20px;
+  background: #4f4f4f;
+  border-radius: 10px;
+  width: 194px;
+  height: 37px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.city option{
+  background: #4f4f4f;
+  color: #ffffff;
+  font-size: 16px;
+}

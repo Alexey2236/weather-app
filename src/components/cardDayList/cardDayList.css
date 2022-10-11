@@ -1,0 +1,15 @@
+.card-day-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-list {
+  background: #4f4f4f;
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+  border-radius: 20px;
+  margin-top: 25px;
+  padding: 3px 25px 15px 25px;
+}
