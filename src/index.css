@@ -13,20 +13,27 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 10px;
 }
 
 .this-day-weather {
+  width: 100%;
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
 }
 
+.title-card {
+  color: #eceff6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .card-day-item {
-  width: 160px;
-  min-height: 240px;
+  width: 150px;
+  height: 240px;
   background-color: #2e3035;
   border-radius: 10px;
   display: flex;
@@ -69,15 +76,6 @@ body {
   text-align: center;
 }
 
-.wind {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  color: #eceff6;
-  text-align: center;
-}
-
 .weather-description {
   font-style: normal;
   font-weight: 400;
@@ -91,8 +89,159 @@ body {
   width: 40px;
 }
 
-.title-card {
+.wind {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
   color: #eceff6;
   text-align: center;
-  margin-bottom: 20px;
 }
+
+@media (max-width: 1393px) {
+  .this-day-weather {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-day-item {
+    width: 140px;
+    height: 210px;
+    row-gap: 8px;
+  }
+
+  .day-card {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .temp-day {
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .temp-like {
+    font-size: 14px;
+  }
+
+  .weather-description {
+    font-size: 12px;
+  }
+
+  .wind {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .card-day-item {
+    width: 150px;
+    height: 200px;
+    column-gap: 5px;
+  }
+
+  .day-card {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .temp-day {
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .temp-like {
+    font-size: 12px;
+  }
+
+  .icon-card {
+    width: 30px;
+  }
+
+  .weather-description {
+    font-size: 12px;
+  }
+
+  .wind {
+    font-size: 12px;
+  }
+
+  .title-card {
+    margin-bottom: 10px;
+  }
+
+  .card-list {
+    padding: 5px 10px;
+  }
+
+  .this-day-weather {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1045px) {
+  .this-day-weather {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .card-day-item {
+    min-width: 150px;
+    height: 200px;
+  }
+
+  .icon-card {
+    width: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-day-item {
+    min-width: 140px;
+    height: 200px;
+  }
+  .icon-card {
+    width: 40px;
+  }
+
+  .this-day-weather {
+    margin-top: 15px;
+    
+  }
+}
+
+@media (max-width: 425px){
+  .card-day-item {
+    min-width: 130px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 375px){
+  .card-day-item {
+    min-width: 130px;
+    
+  }
+
+  .day-card {
+    font-size: 12px;
+  }
+
+  .temp-day {
+    font-size: 22px;
+  }
+
+  .temp-like {
+    font-size: 12px;
+  }
+
+  .icon-card {
+    width: 35px;
+  }
+
+
+}
+
+

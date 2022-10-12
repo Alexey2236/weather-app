@@ -2,8 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  row-gap: 20px;
-  flex-wrap: wrap;
+  column-gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 0 auto;
 }
 
 .card-list {
@@ -12,4 +15,38 @@
   border-radius: 20px;
   margin-top: 25px;
   padding: 3px 25px 15px 25px;
+}
+
+@media (max-width: 1392px) {
+  .title-card {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1045px) {
+  .card-day-list {
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    column-gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-day-list {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    column-gap: 10px;
+  }
+  .card-list {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-list {
+    margin-top: 15px;
+  }
 }

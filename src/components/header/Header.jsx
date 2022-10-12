@@ -11,10 +11,10 @@ function Header({ getCity }) {
           <img src={HeaderLogo} alt="header-logo" className="logo-header" />
         </a>
         <a href="!#">
-          <div className="heaser-title">React weather</div>
+          <div className="heaser-title">weather</div>
         </a>
       </div>
-      <div className="wrapper">
+      
         <select
           name="Выбрать город"
           className="city"
@@ -24,7 +24,6 @@ function Header({ getCity }) {
             return <option key={city} value={city}>{city}</option>;
           })}
         </select>
-      </div>
     </div>
   );
 }

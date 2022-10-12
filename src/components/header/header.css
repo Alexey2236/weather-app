@@ -12,8 +12,7 @@
   align-items: center;
 }
 
-
-.logo-header{
+.logo-header {
   width: 95%;
   height: 95%;
 }
@@ -42,8 +41,73 @@
   color: #ffffff;
 }
 
-.city option{
+.city option {
   background: #4f4f4f;
   color: #ffffff;
   font-size: 16px;
 }
+
+@media (max-width: 1392px) {
+  .heaser-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .logo-header {
+    width: 75%;
+  }
+
+  .city {
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .heaser-title {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .logo-header {
+    width: 70%;
+  }
+
+  .city {
+    width: 130px;
+  }
+}
+
+@media (max-width: 425px){
+  .heaser-title {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .logo-header {
+    width: 60%;
+  }
+
+  .city {
+    width: 110px;
+    height: 25px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px){
+  .heaser-title {
+    font-weight: 600;
+    font-size: 13px;
+  }
+ 
+
+  .city {
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+  }
+}
+
+

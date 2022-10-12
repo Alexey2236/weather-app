@@ -1,6 +1,6 @@
 .this-day-info {
   position: relative;
-  width: 700px;
+  width: 630px;
   height: 300px;
   background: #4f4f4f;
   box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 20px 40px;
+  padding: 20px 30px;
 }
 
 .clouds {
@@ -56,4 +56,144 @@
   font-size: 18px;
   line-height: 17px;
   color: #ffffff;
+}
+
+@media (max-width: 1392px) {
+  .this-day-info {
+    width: 500px;
+    height: 270px;
+  }
+
+  .title-info {
+    font-size: 16px;
+  }
+
+  .info-descr {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1282px) {
+  .this-day-info {
+    padding: 20px;
+  }
+  .info {
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .this-day-info {
+    width: 400px;
+    height: 240px;
+  }
+
+  .title-info {
+    font-size: 14px;
+  }
+
+  .info-descr {
+    font-size: 14px;
+  }
+
+  .clouds {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1045px) {
+  .this-day-info {
+    width: 100%;
+    height: auto;
+  }
+  .clouds {
+    width: 80%;
+  }
+
+  .background-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .wrapper-info {
+    column-gap: 20px;
+  }
+
+  .title-info {
+    font-size: 18px;
+  }
+
+  .info-descr {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .clouds {
+    width: 70%;
+  }
+
+  .wrapper-info {
+    column-gap: 14px;
+  }
+  .info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title-info {
+    font-size: 14px;
+  }
+
+  .info-descr {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .this-day-info {
+  
+    padding: 15px 25px;
+  }
+  .clouds {
+    width: 60%;
+  }
+
+  .wrapper-info {
+    column-gap: 8px;
+  }
+
+  .title-info {
+    font-size: 12px;
+  }
+
+  .info-descr {
+    font-size: 12px;
+  }
+  .background-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 375px){
+
+  .clouds {
+    width: 60%;
+  }
+
+  .wrapper-info {
+    column-gap: 6px;
+  }
+
+  .title-info {
+    font-size: 12px;
+  }
+
+  .info-descr {
+    font-size: 12px;
+  }
+  .background-icon {
+    width: 30px;
+    height: 30px;
+  }
 }
