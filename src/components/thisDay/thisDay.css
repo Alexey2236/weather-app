@@ -1,10 +1,11 @@
 .this-day {
   width: 340px;
-  height: 300px;
+  min-height: 300px;
   background: #4f4f4f;
   box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
   border-radius: 20px;
   padding: 5px 30px;
+ 
 }
 
 .wrapper-top {
@@ -63,7 +64,7 @@
 @media (max-width: 1392px) {
   .this-day {
     width: 300px;
-    height: 270px;
+    min-height: 270px;
     padding: 5px 25px;
   }
 
@@ -94,7 +95,7 @@
 @media (max-width: 1160px) {
   .this-day {
     width: 280px;
-    height: 240px;
+    min-height: 240px;
     padding: 5px 15px;
   }
   .this-temp {
@@ -245,7 +246,7 @@
 
 @media (max-width: 375px){
   .this-temp {
-    font-size: 75px;
+    font-size: 85px;
   }
   .weather-icon {
     width: 80px;

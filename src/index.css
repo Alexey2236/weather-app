@@ -3,7 +3,6 @@
 body {
   margin-top: 25px;
   font-family: "Montserrat", sans-serif;
-
   background: black;
 }
 
@@ -15,12 +14,12 @@ body {
 .container {
   max-width: 1150px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .this-day-weather {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -189,7 +188,7 @@ body {
   }
   .card-day-item {
     min-width: 150px;
-    height: 200px;
+    height: 215px;
   }
 
   .icon-card {

@@ -3,7 +3,8 @@ import "./cardDayList.css";
 import sun from "../../assets/img/sun.svg";
 import cloudy from "../../assets/img/cloudy.svg";
 import rain from "../../assets/img/rain.png";
-import smailRain from "../../assets/img/smailRain.png";
+import smailrun2 from '../../assets/img/smailrun2.png'
+
 import snov from "../../assets/img/snov.png";
 import cloudSun from "../../assets/img/cloudSun.png";
 import fog from "../../assets/img/fog.png";
@@ -35,7 +36,7 @@ function CardDayList({ dataWeather7Day }) {
                   icon = rain;
                   break;
                 case "небольшой дождь":
-                  icon = smailRain;
+                  icon = smailrun2;
                   break;
                 case "небольшой снег":
                   icon = snov;
@@ -47,7 +48,7 @@ function CardDayList({ dataWeather7Day }) {
                   icon = fog;
                   break;
                 case "небольшой проливной дождь":
-                  icon = smailRain;
+                  icon = smailrun2;
                   break;
 
                 default:
@@ -59,9 +60,9 @@ function CardDayList({ dataWeather7Day }) {
                     {item["dt_txt"].slice(0, 10).split("-").reverse().join("-")}
                   </div>
 
-                  <div className="temp-day">{Math.floor(item.main.temp)}°</div>
+                  <div className="temp-day">{Math.round(item.main.temp)}°</div>
                   <span className="temp-like">
-                    Ощущается {Math.floor(item.main.feels_like)}°
+                    Ощущается {Math.round(item.main.feels_like)}°
                   </span>
 
                   <img className="icon-card" src={icon} alt="snov" />
@@ -69,7 +70,7 @@ function CardDayList({ dataWeather7Day }) {
                   <div className="weather-description">
                     {item.weather[0].description}
                   </div>
-                  <div className="wind">Ветер {Math.floor(item.wind.speed)} м/c</div>
+                  <div className="wind">Ветер {Math.round(item.wind.speed)} м/c</div>
                 </div>
               );
             })

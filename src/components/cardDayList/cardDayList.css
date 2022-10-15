@@ -1,12 +1,12 @@
 .card-day-list {
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   column-gap: 10px;
   flex-wrap: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
   margin: 0 auto;
+  padding-bottom: 25px
 }
 
 .card-list {

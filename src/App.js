@@ -7,7 +7,7 @@ function App() {
   const [city, setCyty] = useState(() => {
     const saved = localStorage.getItem("key");
     const result = JSON.parse(saved);
-    if (result !== null && result !== undefined) {
+    if (result !== null && result !== undefined && result !== 'Ростов Великий') {
       return result;
     } else {
       return "Москва";

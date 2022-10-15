@@ -2,11 +2,10 @@ import ThisDay from "../thisDay/ThisDay";
 import ThisDayInfo from "../thisDayInfo/ThisDayInfo";
 import { useEffect, useState } from "react";
 import { getWeatherThisDay } from "../../api";
-import Spiner from "../Spiner";
 import sun from "../../assets/img/sun.svg";
 import cloudy from "../../assets/img/cloudy.svg";
 import rain from "../../assets/img/rain.png";
-import smailRain from "../../assets/img/smailRain.png";
+import smailrun2 from "../../assets/img/smailrun2.png";
 import snov from "../../assets/img/snov.png";
 import cloudSun from "../../assets/img/cloudSun.png";
 import fog from "../../assets/img/fog.png";
@@ -41,7 +40,7 @@ function ThisDayList({ city }) {
         icon = rain;
         break;
       case "небольшой дождь":
-        icon = smailRain;
+        icon = smailrun2;
         break;
       case "небольшой снег":
         icon = snov;
@@ -53,7 +52,7 @@ function ThisDayList({ city }) {
         icon = fog;
         break;
       case "небольшой проливной дождь":
-        icon = smailRain;
+        icon = smailrun2;
         break;
       case "плотный туман":
         icon = fog;
@@ -65,16 +64,8 @@ function ThisDayList({ city }) {
   }
   return (
     <div className="this-day-weather">
-      {dataWeather === null ? (
-        <Spiner />
-      ) : (
-        <ThisDay dataWeather={dataWeather} icon={icon} />
-      )}
-      {dataWeather === null ? (
-        <Spiner />
-      ) : (
-        <ThisDayInfo dataWeather={dataWeather} />
-      )}
+      <ThisDay dataWeather={dataWeather} icon={icon} />
+      <ThisDayInfo dataWeather={dataWeather} />
     </div>
   );
 }
